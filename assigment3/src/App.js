@@ -1,5 +1,7 @@
 import { useState } from "react";
-
+import TableCreate from "./components/profile";
+import "./assets/css/compo.css";
+import { students } from "./data/StudentsDb";
 import './App.css';
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
       default:
         setFontSize("16px");
     }
+  };
   return (
     <>
       <div style={{ fontSize }}>
