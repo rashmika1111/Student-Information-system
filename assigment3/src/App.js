@@ -1,7 +1,9 @@
-import logo from './logo.svg';
+import { useState } from "react";
+
 import './App.css';
 
 function App() {
+  const [fontSize, setFontSize] = useState("16px");
   const changeFontSize = (size) => {
     switch (size) {
       case "small":
